@@ -1,18 +1,18 @@
 ﻿
 ;Remappings
-+CapsLock::CapsLock
-CapsLock::Esc
-
+;+CapsLock::CapsLock
+;CapsLock::Esc
+AppsKey::Send "{Blind}{LWin Down}"
 
 
 ;Hot key Launcher
 
+#F12::KeyHistory
 #q::WinClose "A"
-
 #w::Run "brave"
+#c::Run "Code"
 ; Switch to the next desktop (Ctrl + Alt + Right Arrow)
 #k::Send "{Ctrl Down}{LWin Down}{Right}{LWin Up}{Ctrl Up}"
-
 ; Switch to the previous desktop (Ctrl + Alt + Left Arrow)
 #j::Send "{Ctrl Down}{LWin Down}{Left}{LWin Up}{Ctrl Up}"
 
@@ -21,7 +21,7 @@ CapsLock::Esc
 ;Sound Volume
 #]::Send "{Volume_Up 5}"
 #[::Send "{Volume_Down 5} "
-
+ 
 
  ;Switch to the selected virtual desktop.
  #1::Run "fancywm.exe --action SwitchToDesktop1" 
