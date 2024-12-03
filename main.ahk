@@ -1,9 +1,9 @@
 ﻿
+
+
 ;Remappings
 ;+CapsLock::CapsLock
 ;CapsLock::Esc
-AppsKey::Send "{Blind}{LWin Down}"
-
 
 ;Hot key Launcher
 
@@ -11,6 +11,7 @@ AppsKey::Send "{Blind}{LWin Down}"
 #q::WinClose "A"
 #w::Run "brave"
 #c::Run "Code"
+#o::Run "C:\Users\w\AppData\Local\Programs\Obsidian\Obsidian.exe" ; the %A_APPDATA % didn't work for now 
 ; Switch to the next desktop (Ctrl + Alt + Right Arrow)
 #k::Send "{Ctrl Down}{LWin Down}{Right}{LWin Up}{Ctrl Up}"
 ; Switch to the previous desktop (Ctrl + Alt + Left Arrow)
