@@ -1,22 +1,10 @@
 ﻿
-
-
-;Remappings
-;+CapsLock::CapsLock
-;CapsLock::Esc
-
-;Hot key Launcher
-
+;App Launcher 
 #F12::KeyHistory
 #q::WinClose "A"
 #w::Run "brave"
 #c::Run "Code"
 #o::Run "C:\Users\w\AppData\Local\Programs\Obsidian\Obsidian.exe" ; the %A_APPDATA % didn't work for now 
-; Switch to the next desktop (Ctrl + Alt + Right Arrow)
-#k::Send "{Ctrl Down}{LWin Down}{Right}{LWin Up}{Ctrl Up}"
-; Switch to the previous desktop (Ctrl + Alt + Left Arrow)
-#j::Send "{Ctrl Down}{LWin Down}{Left}{LWin Up}{Ctrl Up}"
-
 
 
 ;Sound Volume
@@ -24,6 +12,7 @@
 #[::Send "{Volume_Down 5} "
  
 
+;Navigation 
  ;Switch to the selected virtual desktop.
  #1::Run "fancywm.exe --action SwitchToDesktop1" 
  #2::Run "fancywm.exe --action SwitchToDesktop2"
@@ -34,7 +23,6 @@
  #7::Run "fancywm.exe --action SwitchToDesktop7"
  #8::Run "fancywm.exe --action SwitchToDesktop8"
  #9::Run "fancywm.exe --action SwitchToDesktop9"
-
 ; Move the focused window to the selected virtual desktop.
 +#1::Run "fancywm.exe --action MoveToDesktop1"
 +#2::Run "fancywm.exe --action MoveToDesktop2"
@@ -45,3 +33,8 @@
 +#7::Run "fancywm.exe --action MoveToDesktop7"
 +#8::Run "fancywm.exe --action MoveToDesktop8"
 +#9::Run "fancywm.exe --action MoveToDesktop9"
+; Switch to the next desktop (Ctrl + Alt + Right Arrow)
+#k::Send "{Ctrl Down}{LWin Down}{Right}{LWin Up}{Ctrl Up}"
+; Switch to the previous desktop (Ctrl + Alt + Left Arrow)
+#j::Send "{Ctrl Down}{LWin Down}{Left}{LWin Up}{Ctrl Up}"
+
