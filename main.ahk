@@ -9,7 +9,8 @@
 
 ;Sound Volume
 #]::Send "{Volume_Up 5}"
-#[::Send "{Volume_Down 5} "
+#[::Send "{Volume_Down 5} " 
+#\::Send "{Media_Play_Pause}"
  
 
 ;Navigation 
